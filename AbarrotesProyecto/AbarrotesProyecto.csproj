@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\agregartxt.cs" />
+    <Compile Include="Controlador\BD_Comm_SQLServer.cs" />
+    <Compile Include="Controlador\compraControlador.cs" />
+    <Compile Include="Controlador\EmpleadoControlador.cs" />
+    <Compile Include="Controlador\ProductoControlador.cs" />
+    <Compile Include="Controlador\proveedorControlador.cs" />
+    <Compile Include="Controlador\UsuarioControlador.cs" />
+    <Compile Include="Controlador\ventaControlador.cs" />
+    <Compile Include="Modelo\DataBase.cs" />
+    <Compile Include="Modelo\Empleado.cs" />
+    <Compile Include="Modelo\Producto.cs" />
+    <Compile Include="Modelo\Proveedor.cs" />
     <Compile Include="Vistas\compraProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\compraProducto.Designer.cs">
       <DependentUpon>compraProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\CUDempleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\CUDempleado.Designer.cs">
+      <DependentUpon>CUDempleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\CUDproducto.cs">
       <SubType>Form</SubType>
@@ -78,6 +96,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\intinerario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\intinerario.Designer.cs">
+      <DependentUpon>intinerario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Venta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +129,9 @@
     <EmbeddedResource Include="Vistas\compraProducto.resx">
       <DependentUpon>compraProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\CUDempleado.resx">
+      <DependentUpon>CUDempleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\CUDproducto.resx">
       <DependentUpon>CUDproducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +153,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\intinerario.resx">
+      <DependentUpon>intinerario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Venta.resx">
       <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,5 +181,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

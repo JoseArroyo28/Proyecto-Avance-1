@@ -39,5 +39,56 @@ namespace AbarrotesProyecto
         {
 
         }
+
+        private void btnProducto_Click(object sender, EventArgs e)
+        {
+            verProducto verProducto = new verProducto();
+            verProducto.Show();
+        }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            Vistas.Venta venta = new Vistas.Venta();
+            venta.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            verProveedor verProveedor = new verProveedor();
+            verProveedor.Show();
+        }
+
+        private void w_Click(object sender, EventArgs e)
+        {
+            compraProducto compra = new compraProducto();
+            compra.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Vistas.verEmpleado verEmpleado = new Vistas.verEmpleado();
+            verEmpleado.Show();
+        }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void eeeeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void itinerarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbarrotesProyecto.Vistas.intinerario intinerario = new Vistas.intinerario();
+            intinerario.Show();
+        }
     }
 }

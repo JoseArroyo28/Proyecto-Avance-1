@@ -19,8 +19,23 @@ namespace AbarrotesProyecto
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            frmMenu frmMenu = new frmMenu();
-            frmMenu.Show();
+            Controlador.UsuarioControlador usuarioControlador = new Controlador.UsuarioControlador(Modelo.DataBase.cadconn);
+            if (usuarioControlador.VerificarUsuario(txtUsuario.Text, txtContraseña.Text))
+            {
+                MessageBox.Show("Bienvenido " + txtUsuario.Text, "Aviso");
+                frmMenu frmMenu = new frmMenu();
+                frmMenu.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Los datos son incorrectos...", "ERROR");
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVenta = new System.Windows.Forms.Button();
@@ -44,6 +45,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.erToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.erGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eeeeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.itinerarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -52,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -61,80 +70,90 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(469, 143);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(265, 211);
+            this.pictureBox1.Size = new System.Drawing.Size(265, 174);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // btnVenta
             // 
-            this.btnVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(160)))), ((int)(((byte)(85)))));
+            this.btnVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVenta.Font = new System.Drawing.Font("MS Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVenta.Location = new System.Drawing.Point(107, 111);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(164, 76);
             this.btnVenta.TabIndex = 4;
-            this.btnVenta.Text = "Venta               ";
+            this.btnVenta.Text = "  Venta               ";
             this.btnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVenta.UseVisualStyleBackColor = false;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
             // btnProducto
             // 
-            this.btnProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(160)))), ((int)(((byte)(85)))));
+            this.btnProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.btnProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducto.Font = new System.Drawing.Font("MS Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProducto.Location = new System.Drawing.Point(107, 214);
             this.btnProducto.Name = "btnProducto";
             this.btnProducto.Size = new System.Drawing.Size(164, 76);
             this.btnProducto.TabIndex = 3;
-            this.btnProducto.Text = "Producto            ";
+            this.btnProducto.Text = " Producto            ";
             this.btnProducto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnProducto.UseVisualStyleBackColor = false;
+            this.btnProducto.Click += new System.EventHandler(this.btnProducto_Click);
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(160)))), ((int)(((byte)(85)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("MS Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(107, 319);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 76);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Proveedor          ";
+            this.button2.Text = " Proveedor          ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // w
             // 
-            this.w.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(160)))), ((int)(((byte)(85)))));
+            this.w.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.w.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.w.Font = new System.Drawing.Font("MS Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.w.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.w.Location = new System.Drawing.Point(107, 420);
             this.w.Name = "w";
             this.w.Size = new System.Drawing.Size(164, 76);
             this.w.TabIndex = 1;
-            this.w.Text = "Compra              ";
+            this.w.Text = "  Compra              ";
             this.w.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.w.UseVisualStyleBackColor = false;
+            this.w.Click += new System.EventHandler(this.w_Click);
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(160)))), ((int)(((byte)(85)))));
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("MS Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(107, 524);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(164, 76);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Usuario              ";
+            this.button5.Text = " Usuario              ";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pnlMenu
             // 
             this.pnlMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(220)))), ((int)(((byte)(178)))));
+            this.pnlMenu.BackColor = System.Drawing.SystemColors.Info;
             this.pnlMenu.Controls.Add(this.pictureBox7);
             this.pnlMenu.Controls.Add(this.pictureBox6);
             this.pnlMenu.Controls.Add(this.pictureBox5);
@@ -146,10 +165,11 @@
             this.pnlMenu.Controls.Add(this.btnVenta);
             this.pnlMenu.Controls.Add(this.button2);
             this.pnlMenu.Controls.Add(this.btnProducto);
-            this.pnlMenu.Location = new System.Drawing.Point(1, 2);
+            this.pnlMenu.Location = new System.Drawing.Point(1, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(285, 632);
+            this.pnlMenu.Size = new System.Drawing.Size(285, 634);
             this.pnlMenu.TabIndex = 8;
+            this.pnlMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenu_Paint);
             // 
             // pictureBox7
             // 
@@ -228,24 +248,80 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(54)))), ((int)(((byte)(85)))));
-            this.label2.Location = new System.Drawing.Point(484, 61);
+            this.label2.Location = new System.Drawing.Point(459, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(250, 56);
+            this.label2.Size = new System.Drawing.Size(268, 57);
             this.label2.TabIndex = 10;
             this.label2.Text = "Abarrotes";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.erToolStripMenuItem,
+            this.erGToolStripMenuItem,
+            this.eeeeeToolStripMenuItem,
+            this.eToolStripMenuItem,
+            this.itinerarioToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(951, 28);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // erToolStripMenuItem
+            // 
+            this.erToolStripMenuItem.Name = "erToolStripMenuItem";
+            this.erToolStripMenuItem.Size = new System.Drawing.Size(34, 24);
+            this.erToolStripMenuItem.Text = "er";
+            // 
+            // erGToolStripMenuItem
+            // 
+            this.erGToolStripMenuItem.Name = "erGToolStripMenuItem";
+            this.erGToolStripMenuItem.Size = new System.Drawing.Size(146, 24);
+            this.erGToolStripMenuItem.Text = "ereeeeeeeeeeeeee";
+            // 
+            // eeeeeToolStripMenuItem
+            // 
+            this.eeeeeToolStripMenuItem.Name = "eeeeeToolStripMenuItem";
+            this.eeeeeToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.eeeeeToolStripMenuItem.Text = "eeeee";
+            this.eeeeeToolStripMenuItem.Click += new System.EventHandler(this.eeeeeToolStripMenuItem_Click);
+            // 
+            // eToolStripMenuItem
+            // 
+            this.eToolStripMenuItem.Name = "eToolStripMenuItem";
+            this.eToolStripMenuItem.Size = new System.Drawing.Size(29, 24);
+            this.eToolStripMenuItem.Text = "e";
+            // 
+            // itinerarioToolStripMenuItem
+            // 
+            this.itinerarioToolStripMenuItem.Name = "itinerarioToolStripMenuItem";
+            this.itinerarioToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
+            this.itinerarioToolStripMenuItem.Text = " Itinerario";
+            this.itinerarioToolStripMenuItem.Click += new System.EventHandler(this.itinerarioToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(151)))), ((int)(((byte)(216)))));
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(951, 631);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
             this.Text = "frmMenu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -256,6 +332,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,5 +355,12 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem erToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem erGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eeeeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem itinerarioToolStripMenuItem;
     }
 }
